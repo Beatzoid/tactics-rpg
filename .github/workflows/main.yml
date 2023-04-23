@@ -10,8 +10,7 @@ jobs:
             fail-fast: false
             matrix:
                 unityVersion:
-                    - 2022.1.14f1
-                    - 2021.3.8f1
+                    - 2022.2.16f1
                 targetPlatform:
                     - StandaloneLinux64 # Build a Linux 64-bit standalone.
                     - iOS # Build an iOS player.
@@ -48,8 +47,7 @@ jobs:
             fail-fast: false
             matrix:
                 unityVersion:
-                    - 2022.1.14f1
-                    - 2021.3.8f1
+                    - 2022.2.16f1
                 targetPlatform:
                     - StandaloneWindows64 # Build a Windows 64-bit standalone.
                     - WSAPlayer # Build a UWP App.
@@ -86,8 +84,7 @@ jobs:
             fail-fast: false
             matrix:
                 unityVersion:
-                    - 2022.1.14f1
-                    - 2021.3.8f1
+                    - 2022.2.16f1
                 targetPlatform:
                     - StandaloneOSX # Build a macOS standalone.
 
