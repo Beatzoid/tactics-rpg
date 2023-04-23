@@ -1,0 +1,16 @@
+# name: Docs
+# on:
+#     push:
+#         branches: [master]
+#     pull_request:
+#         branches: [master]
+
+# jobs:
+#     doc:
+#         name: Generate Docs
+#         runs-on: ubuntu-latest
+
+#         steps:
+#             - uses: actions/checkout@v3
+
+#             - uses: langroodi/doxygenize@v1
