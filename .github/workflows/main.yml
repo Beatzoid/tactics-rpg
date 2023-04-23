@@ -36,7 +36,6 @@ jobs:
               with:
                   unityVersion: ${{ matrix.unityVersion }}
                   targetPlatform: ${{ matrix.targetPlatform }}
-                  customParameters: "-myParameter myValue -myBoolean -ThirdParameter andItsValue"
             - uses: actions/upload-artifact@v3
               with:
                   name: Build
@@ -75,7 +74,6 @@ jobs:
               with:
                   unityVersion: ${{ matrix.unityVersion }}
                   targetPlatform: ${{ matrix.targetPlatform }}
-                  customParameters: "-myParameter myValue -myBoolean -ThirdParameter andItsValue"
             - uses: actions/upload-artifact@v3
               with:
                   name: Build
@@ -113,7 +111,6 @@ jobs:
               with:
                   unityVersion: ${{ matrix.unityVersion }}
                   targetPlatform: ${{ matrix.targetPlatform }}
-                  customParameters: "-myParameter myValue -myBoolean -ThirdParameter andItsValue"
 
             - uses: actions/upload-artifact@v3
               with:
