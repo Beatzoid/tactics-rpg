@@ -1,7 +1,10 @@
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class BoardCreator : MonoBehaviour
 {
@@ -90,7 +93,9 @@ public class BoardCreator : MonoBehaviour
 
         string filename = string.Format("Assets/Resources/Levels/{1}.asset", filePath, name);
 
+#if UNITY_EDITOR
         AssetDatabase.CreateAsset(board, filename);
+#endif
     }
 
     public void Load()
@@ -109,6 +114,7 @@ public class BoardCreator : MonoBehaviour
 
     private void CreateSaveDirectory()
     {
+#if UNITY_EDITOR
         string filePath = Application.dataPath + "/Resources";
         if (!Directory.Exists(filePath))
             AssetDatabase.CreateFolder("Assets", "Resources");
@@ -118,6 +124,7 @@ public class BoardCreator : MonoBehaviour
             AssetDatabase.CreateFolder("Assets/Resources", "Levels");
 
         AssetDatabase.Refresh();
+#endif
     }
 
     private Rect RandomRect()
